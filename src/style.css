@@ -1,0 +1,25 @@
+a i.fa-chevron-right {
+    transition: transform 0.3s ease;
+}
+
+a:hover i.fa-chevron-right {
+    transform: translateX(5px); 
+}
+
+button i.fa-chevron-right {
+    transition: transform 0.3s ease;
+}
+
+button:hover i.fa-chevron-right {
+    transform: translateX(5px); 
+}
+
+
+/* i{
+    transition: transform 0.3s ease; 
+}
+
+i:hover{
+    transform: translateX(5px);
+}
+ */

@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="menu.js"></script>
+</head>
+<body>
+
+    
+    
+    
+   <!-- Menu --> 
+
+   <header>
+    
+    <div class="w-full bg-red-color py-10">
+        <div class="flex justify-between items-center px-6 container mx-auto">
+            <img class="" width="80px" src="/src/image/liverpoolfc_crest.png" alt="">
+    
+            <nav class="w-4/5">
+                <ul id="menu" class="hidden xl:flex items-center text-white text-sm font-roboto font-bold  gap-7">
+                    <li class="hover:opacity-80 transition duration-300 ease-in-out">NEWS</li>
+                    <li class="hover:opacity-80 transition duration-300 ease-in-out">FIXTURES & TEAMS</li>
+                    <li class="hover:opacity-80 transition duration-300 ease-in-out">TICKETS & BOOKING</li>
+                    <li class="hover:opacity-80 transition duration-300 ease-in-out">SHOP</li>
+                    <li class="hover:opacity-80 transition duration-300 ease-in-out">VIDEO</li>
+                    <li class="hover:opacity-80 transition duration-300 ease-in-out">MORE</li>
+                    <li class="hover:opacity-80 transition duration-300 ease-in-out"><i class="fa-solid fa-user-plus"></i> JOIN</li>
+                    <li class="hover:opacity-80 transition duration-300 ease-in-out">LOGIN</li>
+                    <li class="flex items-center gap-2 group relative">
+                        <img width="20%" src="image/union-flag-stroked.jpg" alt="">
+                        <i class="fa-solid fa-angle-down text-lg"></i>
+                        <ul class="hidden group-hover:block absolute top-8 w-60 bg-white p-4 space-y-5">
+                            <li class="flex items-center gap-6 p-2 hover:bg-bg-color-shop transition duration-300 ease-in-out"><img width="15%" src="image/germany-flag_0.jpg" alt=""><a class="text-black-one font-roboto font-bold text-base" href="">German</a></li>
+                            <li class="flex items-center gap-6 p-2 hover:bg-bg-color-shop transition duration-300 ease-in-out"><img width="15%" src="image/spain-flag.jpg" alt=""><a class="text-black-one font-roboto font-bold text-base" href="">Spain</a></li>
+                            <li class="flex items-center gap-6 p-2 hover:bg-bg-color-shop transition duration-300 ease-in-out"><img width="15%" src="image/france-flag.jpg" alt=""><a class="text-black-one font-roboto font-bold text-base" href="">French</a></li>
+                        </ul> 
+                    </li>
+                    <li><img width="100%" src="image/standard.png" alt=""></li>
+                </ul>
+                
+                <button id="mobileMenuBtn" class="xl:hidden block w-full ps-52 lg:ps-96">
+                    <i class="fa-solid fa-bars text-white text-3xl"></i>
+                </button>
+            </nav>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden xl:hidden bg-red-color py-5">
+            <ul class="text-white text-center">
+                <li class="py-2">NEWS</li>
+                <li class="py-2">FIXTURES & TEAMS</li>
+                <li class="py-2">TICKETS & BOOKING</li>
+                <li class="py-2">SHOP</li>
+                <li class="py-2">VIDEO</li>
+                <li class="py-2">MORE</li>
+                <li class="py-2">JOIN</li>
+                <li class="py-2">LOGIN</li>
+                <li class="flex justify-center items-center gap-2 group relative py-2">
+                    <img class="w-7" src="image/union-flag-stroked.jpg" alt="">
+                    <i class="fa-solid fa-angle-down text-lg"></i>
+                    <ul class="hidden group-hover:block absolute top-9 w-60 bg-white p-4 space-y-5">
+                        <li class="flex items-center gap-6 p-2 hover:bg-bg-color-shop transition duration-300 ease-in-out"><img width="15%" src="image/germany-flag_0.jpg" alt=""><a class="text-black-one font-roboto font-bold text-base" href="">German</a></li>
+                        <li class="flex items-center gap-6 p-2 hover:bg-bg-color-shop transition duration-300 ease-in-out"><img width="15%" src="image/spain-flag.jpg" alt=""><a class="text-black-one font-roboto font-bold text-base" href="">Spain</a></li>
+                        <li class="flex items-center gap-6 p-2 hover:bg-bg-color-shop transition duration-300 ease-in-out"><img width="15%" src="image/france-flag.jpg" alt=""><a class="text-black-one font-roboto font-bold text-base" href="">French</a></li>
+                    </ul> 
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+        
+    </header>
+   
+
+    
+    <!-- News -->
+    <div class="w-full bg-red-color pb-10">
+    <div class="flex container mx-auto items-center justify-between px-3">
+        <button class="text-white font-roboto rounded-full bg-btn-color px-4 py-2 mt-6 text-sm font-semibold" >HEADLINES</button>
+        <a class="flex items-center gap-1 justify-end text-white font-roboto text-sm font-semibold hover:opacity-80 transition duration-300 ease-in-out">ALL NEWS <i class="fa-solid fa-chevron-right"></i></a>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 px-3 xl:grid-cols-3 grid-rows-2 gap-8 container mx-auto pt-8">
+    <div class="">
+        <img width="550px" src="image/klopp-moty-graphic-080524.webp" alt="">
+        <p class="mt-16 text-white font-thin font-roboto text-xs opacity-90">3 HOURS AGO</p>
+    <h3 class="text-white text-xl font-semi-bold font-roboto mt-1.5"><span class="font-bold text-base">VIDEO</span> Liverpool 4-2 Tottenham Hotspur: Watch free highlights</h3>
+    </div>    
+   
+    <div class="card"> 
+    <img width="550px" src="image/van-dijk-poty-graphic-080524.webp" alt="">
+    <p class="mt-16 text-white font-thin font-roboto text-xs opacity-90">4 HOURS AGO</p>
+    <h3 class="text-white text-xl font-semi-bold font-roboto mt-1.5"><span class="font-bold text-base">REACTION</span> Jürgen Klopp press conference: 'I really like the way the boys played'</h3>
+    </div>
+
+    <div>
+    <img width="550px" src="image/harvey-elliott-tottenham-reaction-05052024.webp" alt="">
+    <p class="mt-16 text-white font-thin font-roboto text-xs opacity-90">4 HOURS AGO</p>
+    <h3 class="text-white text-xl font-semi-bold font-roboto mt-1.5"><span class="font-bold text-base">REACTION</span> Harvey Elliott: It's about time I scored... but I thought it was going over!</h3>
+    </div>
+
+    
+    
+    <div class="card"> 
+        <img width="550px" src="image/jurgen-klopp-liverpool-fc-050524.webp" alt="">
+        <p class="mt-16 text-white font-thin font-roboto text-xs opacity-90">7 HOURS AGO</p>
+        <h3 class="text-white text-xl font-semi-bold font-roboto mt-1.5"><span class="font-bold text-base">REACTION</span> Jürgen Klopp press conference: 'I really like the way the boys played'</h3>
+        </div>
+    
+    <div>
+        <img width="550px" src="image/lfc-women-man-utd-05052024-highlights_1.webp" alt="">
+        <p class="mt-16 text-white font-thin font-roboto text-xs opacity-90">10 HOURS AGO</p>
+        <h3 class="text-white text-xl font-semi-bold font-roboto mt-1.5"><span class="font-bold text-base">VIDEO</span> Watch WSL highlights: Liverpool 1-0 Manchester United</h3>
+    </div>
+
+    
+    <div>
+        <img width="550px" src="image/kop-10-debut-goals-29042024-salah.webp" alt="">
+        <p class="mt-16 text-white font-thin font-roboto text-xs opacity-90">12 HOURS AGO</p>
+        <h3 class="text-white text-xl font-semi-bold font-roboto mt-1.5"><span class="font-bold text-base">FEATURE</span> Owen, Fowler, Suarez, Salah and more: A dozen memorable debut LFC goals</h3>
+    </div>
+    </div>
+
+</div>
+</div>
+  
+
+  <!-- Matches -->
+
+  <section>
+ <div class="container mx-auto pb-20 pt-6">
+
+    <div class="flex container mx-auto items-center justify-between mt-9 px-2">
+        <button class="text-white font-roboto rounded-full bg-button-black px-4 py-2.5 text-sm font-semibold" >FIXTURES</button>
+        <button class="text-black font-roboto rounded-full bg-button-yellow px-4 py-2.5 text-sm font-semibold flex items-center gap-2" ><i class="fa-solid fa-calendar-days"></i>Add fixtures to calendar</button>
+    </div>
+
+    
+    <div class="grid grid-cols-1 lg:grid-cols-2 px-2  xl:grid-cols-3 gap-10 py-10">
+    <div class="border border-solid border-border-color p-6">
+        <div class="flex justify-between">
+        <div>
+        <h3 class="text-black-one font-roboto font-bold text-base">PREMIER LEAGUE</h3>
+        <p class="text-slate-400 text-sm">SUN 5 MAY -17:30</p>
+        </div>
+
+        <div>
+            <img class="max-h-11" src="image/premier-league.webp" alt="">
+        </div>
+        </div>
+
+        <div class="flex justify-between items-center mt-16">
+        <div class="flex flex-col gap-4">
+        
+        <div class="flex items-center gap-1" id="next">
+        <img class="max-h-10" src="image/image.png" alt="">
+        <h3 class="text-black-one font-normal font-roboto text-lg">Liverpool</h3>
+        </div>
+
+        <div class="border bottom-2 border-border-color w-64 xl:w-72 lg:w-80"></div>
+
+        <div class="flex items-centen">
+        <img class="max-h-10" src="image/image-tott.png" alt="">
+        <h3 class="text-slate-400 font-roboto text-lg">Tottenham</h3>
+       </div>
+        </div>
+
+
+        <div class="bg-gray-color flex flex-col gap-5 py-2 px-4 xl:py-4 xl:px-8">
+        <h3  class="font-roboto text-lg ">4</h3>
+        <h3  class="font-roboto text-lg ">2</h3>
+        </div>
+        </div>
+        <div class="mt-16">
+            <button class="text-white font-roboto text-base font-semibold bg-button-black flex ps-4 py-7 w-full mt-4 items-center gap-1 hover:opacity-85">MATCH REPORT!<i class="fa-solid fa-chevron-right text-sm"></i></button>
+        </div>
+    </div>
+
+    <div class="border border-solid border-border-color p-6">
+        <div class="flex justify-between">
+        <div>
+        <h3 class="text-black-one font-roboto font-bold text-base">U18 PREMIER LEAGUE</h3>
+        <p class="text-slate-400 text-sm">SAT 11 MAY -11:30</p>
+        </div>
+
+        <div>
+            <img class="max-h-11" src="image/u18-premier-league-logo.webp" alt="">
+        </div>
+        </div>
+
+        <div class="flex justify-between items-center mt-16">
+        <div class="flex flex-col gap-4">
+        
+        <div class="flex items-center gap-1" id="next">
+        <img class="max-h-10" src="image/image.png" alt="">
+        <h3 class="text-black-one font-normal font-roboto text-lg">Derby</h3>
+        </div>
+
+        <div id="border" class="border bottom-2 border-border-color w-336 xl:w-64"></div>
+
+        <div class="flex items-centen">
+        <img class="max-h-10" src="image/image-tott.png" alt="">
+        <h3 class="text-slate-400 font-roboto text-lg">Liverpool</h3>
+       </div>
+        </div>
+
+        </div>
+    </div>
+
+
+    <div class="lg:col-span-2 xl:col-span-1 border border-solid border-border-color p-6 ">
+        <div class="flex justify-between">
+        <div>
+        <h3 class="text-black-one font-roboto font-bold text-base">PREMIER LEAGUE 2</h3>
+        <p class="text-slate-400 text-sm">TBC</p>
+        </div>
+
+        <div>
+            <img class="max-h-11" src="image/premier-league-2-logo.webp" alt="">
+        </div>
+        </div>
+
+        <div class="flex justify-between items-center mt-16">
+        <div class="flex flex-col gap-4">
+        
+        <div class="flex items-center gap-1" id="next">
+        <img class="max-h-10" src="image/image.png" alt="">
+        <h3 class="text-black-one font-normal font-roboto text-lg">Tottenham</h3>
+        </div>
+
+        <div id="border" class="border bottom-2 border-border-color w-336 xl:w-64"></div>
+
+        <div class="flex items-centen">
+        <img class="max-h-10" src="image/image-tott.png" alt="">
+        <h3 class="text-slate-400 font-roboto text-lg">Liverpool</h3>
+       </div>
+        </div>
+        </div>
+        
+    </div>
+
+    </div>
+</section>
+
+    <!-- Player -->
+
+    <div class="bg-bg-color-shop py-20">
+
+    <div class="container mx-auto px-2">
+    <div class="">
+        <button class="text-white font-roboto rounded-full bg-button-black px-4 py-2.5 text-sm font-semibold" >LFC RETAIL</button>
+    </div>
+ 
+    <div class="flex mt-6 gap-6 text-shop-color-button font-roboto font-semibold text-base ">
+        <button class="border-b-4 border-border-color-hover hover:text-color-shop  hover:border-none transition duration-300 ease-in-out">NEW: 24/25 HOME KIT</button>
+        <button class="text-color-shop hover:border-b-4 border-border-color-hover hover:text-shop-color-button duration-300 ease-in-out">NEW: 24/25 STYLES</button>
+        <button class="text-color-shop hover:border-b-4 border-border-color-hover hover:text-shop-color-button duration-300 ease-in-out">YOU MAY LIKE</button>
+    </div>
+
+
+    <div class="grid grid-cols-2 xl:grid-cols-5 gap-8 py-6 ">
+
+        <div class="space-y-5 p-5 bg-bg-color-shop border border-border-color border-solid">
+            <img class="" src="image/first-image-shop.jpg" alt="">
+            <p class="font-normal font-roboto text-slate-400">LFC Nike Infants 24/25 Home Kit</p>
+            <h2 class="font-extrabold font-roboto text-4xl">£47.00</h2>
+            <button class="text-white font-roboto text-base font-semibold bg-button-black flex ps-4 py-7 w-full mt-4 items-center gap-1 hover:opacity-85">BUY NOW<i class="fa-solid fa-chevron-right text-sm"></i></button>
+        </div>
+
+        <div class="space-y-5 p-5 bg-bg-color-shop border border-border-color border-solid">
+            <img class="" src="image/fn9234g_1.jpg" alt="">
+            <p class="font-normal font-roboto text-slate-400">LFC Nike Infants 24/25 Home Kit</p>
+            <h2 class="font-extrabold font-roboto text-4xl">£85.00</h2>
+            <button class="text-white font-roboto text-base font-semibold bg-button-black flex ps-4 py-7 w-full mt-4 items-center gap-1 hover:opacity-85">BUY NOW<i class="fa-solid fa-chevron-right text-sm"></i></button>
+        </div>
+
+        <div class="space-y-5 p-5 bg-bg-color-shop border border-border-color border-solid">
+            <img class="" src="image/fn8798g_1.jpg" alt="">
+            <p class="font-normal font-roboto text-slate-400">LFC Nike Mens 24/25 Home</p>
+            <h2 class="font-extrabold font-roboto text-4xl">£102.00</h2>
+            <button class="text-white font-roboto text-base font-semibold bg-button-black flex ps-4 py-7 w-full mt-4 items-center gap-1 hover:opacity-85">BUY NOW<i class="fa-solid fa-chevron-right text-sm"></i></button>
+        </div>
+
+        <div class="space-y-5 p-5 bg-bg-color-shop border border-border-color border-solid">
+            <img class="" src="image/fn8987g_1.jpg" alt="">
+            <p class="font-normal font-roboto text-slate-400">LFC Nike Womens 24/25 Home</p>
+            <h2 class="font-extrabold font-roboto text-4xl">£65.00</h2>
+            <button class="text-white font-roboto text-base font-semibold bg-button-black flex ps-4 py-7 w-full mt-4 items-center gap-1 hover:opacity-85">BUY NOW<i class="fa-solid fa-chevron-right text-sm"></i></button>
+        </div>
+
+        <div class="space-y-5 p-5 bg-bg-color-shop border border-border-color border-solid">
+            <img class="" src="image/fn9066g_1.jpg" alt="">
+            <p class="font-normal font-roboto text-slate-400">LFC Nike Infants 24/25 Home Kit</p>
+            <h2 class="font-extrabold font-roboto text-4xl">£83.00</h2>
+            <button class="text-white font-roboto text-base font-semibold bg-button-black flex ps-4 py-7 w-full mt-4 items-center gap-1 hover:opacity-85">BUY NOW<i class="fa-solid fa-chevron-right text-sm"></i></button>
+        </div>
+
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <!-- Stadium -->
+
+    <div class="bg-color-header flex justify-center py-32">
+
+        <div class="flex flex-col gap-5 px-3">
+
+        <div class="py-4">
+            <h6 class="font-semibold font-roboto text-base">ANNOUNCEMENT</h6>
+            <h2 class="mt-3 font-semibold text-5xl max-w-4xl">Liverpool FC Women will move to a new home stadium from the start of the 2024-25 season. <i class="fa-solid fa-circle-chevron-right text-3xl"></i></h2>
+        </div>
+
+        <div class="space-y-6">
+            <h3 class="max-w-96 text-lg font-medium font-roboto"><span class="font-semibold text-sm">NEWS </span>Liverpool FC Women set for new home stadium from 2024-25</h3>
+            <img width="500px" src="image/lfc-women-stadium-03052024.webp" alt="">
+        </div>
+
+    </div>
+</div>
+
+
+    
+   <!--Memorial-->
+
+   <div class="px-4 flex-col xl:flex xl:flex-row container mx-auto  py-24 gap-8">
+    <img class="lg:size-full md:size-full  xl:w-1/2" src="image/memorial-1989-desktop.svg" alt="">
+    <img class="lg:size-full md:size-full md:mt-6  xl:w-1/2" src="image/memorial-1989-desktop.svg" alt="">
+   </div>
+
+   <!-- Titles -->
+    <div class="bg-gray-color">
+   <div class="lg:grid-cols-7 grid grid-cols-2  xl:grid-cols-7 container mx-auto gap-12 px-5 py-10">
+
+    <div class="flex flex-col items-center gap-3">
+    <img width="75%" src="image/league_title.svg" alt="">
+    <h6 class="text-sm text-gray-cup font-bold ">19</h6>
+    </div>
+
+    <div class="flex flex-col items-center gap-3">
+    <img width="75%" src="image/european_cup.svg" alt="">
+    <h6 class="text-base text-gray-cup font-bold ">6</h6>
+    </div>
+
+    <div class="flex flex-col items-center gap-3">
+    <img width="75%" src="image/fa_cup.svg" alt="">
+    <h6 class="text-base text-gray-cup font-bold ">8</h6>
+    </div>
+
+    <div class="flex flex-col items-center gap-3">
+    <img width="70%" src="image/uefa_cup.svg" alt="">
+    <h6 class="text-base text-gray-cup font-bold ">3</h6>
+    </div>
+
+    <div class="flex flex-col items-center gap-3">
+    <img width="70%" src="image/league_cup.svg" alt="">
+    <h6 class="text-base text-gray-cup font-bold ">10</h6>
+    </div>
+
+    <div class="flex flex-col items-center gap-3">
+    <img width="70%" src="image/uefa_super_cup.svg" alt="">
+    <h6 class="text-base text-gray-cup font-bold ">4</h6>
+   </div>
+
+   <div class="hidden lg:flex xl:flex flex-col items-center gap-3">
+    <img width="70%" src="image/fifa_club_world_cup.svg" alt="">
+    <h6 class="text-base text-gray-cup font-bold ">1</h6>
+   </div>
+
+   </div>
+   </div>
+
+   <!-- Pre Footer -->
+
+   <div class="bg-red-color">
+    <div class="lg:grid-cols-4 grid grid-cols-2 ps-6  xl:grid-cols-4 container mx-auto items-center gap-14 xl:ps-24 py-24">
+        <img height="80px" width="140px" src="image/2021-22_SCB_White.svg" alt="">
+        <img height="80px" width="140px" src="image/2021-22_Nike_White.svg" alt="">
+        <img height="80px" width="140px" src="image/2021-22_AXA_White.svg" alt="">
+        <img height="80px" width="140px" src="image/Expedia Logo 2023.svg" alt="">
+    </div>
+   </div>
+
+   <div class="bg-headerbg">
+    <div class="lg:grid-cols-6 lg:grid-rows-3 grid grid-cols-2 xl:gap-10  px-16 xl:grid-cols-8 container mx-auto grid-rows-2 items-center py-10 gap-20">
+        <img height="50px" width="75px" src="image/logo-carlsberg.svg" alt="">
+        <img height="50px" width="75px" src="image/wasabi-logo-stacked-white.svg" alt="">
+        <img height="50px" width="75px" src="image/2021-22_Nivea White.svg" alt="">
+        <img height="50px" width="75px" src="image/SCJ_Logo_White.svg" alt="">
+        <img height="50px" width="75px" src="image/VistaPrint_V_Grayscale_Inverted.svg" alt="">
+        <img height="50px" width="75px" src="image/kodansha_logo_horizontal_lockup_fixed.svg" alt="">
+        <img height="50px" width="75px" src="image/Peloton.svg" alt="">
+        <img height="50px" width="75px" src="image/Logo_Secondary_GPixel_Horz_White_900 bound.svg" alt="">
+        <img height="50px" width="75px" src="image/Orion_Logo_Registered_White 1.svg" alt="">
+        <img height="50px" width="75px" src="image/EAS_PRIMARY_LOGO_WHT_PNG clear.svg" alt="">
+        <img height="50px" width="75px" src="image/logo-m.svg" alt="">
+        <img height="50px" width="75px" src="image/Extreme-Networks-WH.svg" alt="">
+        <img height="50px" width="75px" src="image/ups_flat_shield_white.svg" alt="">
+        <img height="50px" width="75px" src="image/2021-22_Cadbury White.svg" alt="">
+        <img height="50px" width="75px" src="image/sorare-full-white.svg" alt="">
+        <img height="50px" width="75px" src="image/IW_Logo_RGB_white_0.svg" alt="">
+    </div>
+   </div>
+    
+
+   <!-- Footer -->
+
+   <footer class="bg-footer-color">
+    <div class="container mx-auto py-10 lg:flex lg:justify-between xl:flex xl:justify-between items-center">
+    <div class="px-16 flex xl:flex gap-10 text-white uppercase text-xs">
+
+        <div class="flex flex-col gap-3">
+            <a href="">PRIVACY POLICY</a>
+            <a href="">Terms and conditions</a>
+            <a href="">Anti-Slavery</a>
+            <a href="">Cookies</a>
+            
+        </div>
+
+        <div class="flex flex-col gap-3">
+            <a href="">Contact US</a>
+            <a href="">Accessibility</a>
+            <a href="">Cookie Settings</a>
+            <a href="">Help</a>
+        </div>
+    </div>
+
+    <div class="border bottom-0.5 border-footer-bottom-color opacity-40 mt-8 lg:hidden  xl:hidden"></div>
+
+    <div class="">
+    <div class="flex justify-center xl:justify-end md:justify-start lg:justify-end">
+        <ul class="py-12 gap-9   xl:gap-10 flex text-white xl:pe-16 lg:pe-16 text-2xl md:px-10">
+            <li><i class="fa-brands fa-facebook"></i></li>
+            <li><i class="fa-brands fa-linkedin-in"></i></li>
+            <li><i class="fa-brands fa-tiktok"></i></li>
+            <li><i class="fa-brands fa-instagram"></i></li>
+            <li><i class="fa-brands fa-x-twitter"></i></li>
+            <li><i class="fa-brands fa-youtube"></i></li>
+        </ul>
+    </div>
+
+    <div class="border bottom-0.5 border-footer-bottom-color opacity-40 lg:hidden  xl:hidden"></div>
+
+    <div class="lg:flex lg:items-center lg:ps-32 lg:mt-0 flex px-12 xl:flex xl:items-center xl:px-0 gap-3 mt-6">
+      <span  class="text-white text-xs font-bold">DOWNLOAD THE OFFICIAL LFC APP</span>
+      <img width="25%" src="image/app-store.png" alt="">
+      <img width="25%" src="image/playstore.png" alt="">
+     </div>
+    </div>
+    </div>
+   
+
+ 
+    <div class="container mx-auto">
+    <div class="border bottom-0.5 border-footer-bottom-color opacity-40"></div>
+    <div>
+    <p class="px-8 lg:text-center xl:text-center py-8 text-footer-bottom-color text-xs">© COPYRIGHT 2024 THE LIVERPOOL FOOTBALL CLUB AND ATHLETIC GROUNDS LIMITED. ALL RIGHTS RESERVED. MATCH STATISTICS SUPPLIED BY OPTA SPORTS DATA LIMITED. REPRODUCED UNDER LICENCE FROM FOOTBALL DATACO LIMITED. ALL RIGHTS RESERVED.</p>
+    </div>
+    </div>
+   </footer>
+    
+   
+      
+</body>
+</html>
